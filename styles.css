@@ -194,7 +194,7 @@ div {
 
 }
 
-.center-heading .svg-container{
+.center-heading .svg-container {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -275,6 +275,10 @@ div {
 
 }
 
+.discover-full-container .sign-buttons {
+    display: none;
+}
+
 .open-login-btn .buttons .login-btn span {
     display: block;
     flex-grow: 1;
@@ -315,15 +319,9 @@ div {
     justify-content: center;
     width: 100%;
     max-width: 100%;
-  
-}
-
-.input-btn-container{
-    /* display: flex; */
-    /* min-height: 40px; */
-    /* width: 100%; */
 
 }
+
 
 .input-btn-container .input-container {
     width: 100%;
@@ -350,12 +348,12 @@ div {
 .input-btn-container .input-container .input-form {
     margin: 12px;
     flex-grow: 1;
-    background:inherit ;
+    background: inherit;
     max-width: 100%;
-    
+
 }
 
-.input-btn-container .input-form input{
+.input-btn-container .input-form input {
     font-family: "TT Norms medium";
     font-size: 16px;
     line-height: 22px;
@@ -363,7 +361,7 @@ div {
     font-weight: 500;
     width: 100%;
     appearance: none;
-    outline: none; 
+    outline: none;
     display: flex;
     border: none;
     padding: 0px;
@@ -375,7 +373,7 @@ div {
 
 .input-btn-container .right-arrow {
     max-width: 100%;
-    
+
 }
 
 .input-btn-container .right-arrow button {
@@ -419,11 +417,11 @@ div {
     flex-grow: 1;
     max-width: 100%;
     opacity: 1;
-    padding:0px 12px;
+    padding: 0px 12px;
     transition: opacity 0.15s ease-in-out;
 }
 
-.login-btn-container .text-icon-container  .text-icon-container-2{
+.login-btn-container .text-icon-container .text-icon-container-2 {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -438,14 +436,15 @@ div {
 }
 
 
-.login-btn-container .text-icon-container .text{
+.login-btn-container .text-icon-container .text {
     flex-grow: 2;
     min-width: 0px;
     display: flex;
     justify-content: center;
     margin-left: 4px;
 }
-.login-btn-container .text-icon-container .text .login{
+
+.login-btn-container .text-icon-container .text .login {
     width: 100%;
     font-family: 'TT Norms bold';
     font-size: 14px;
@@ -460,34 +459,39 @@ div {
     padding: 0px;
 }
 
-.login-btn-container .text-icon-container .text .signin{
+.login-btn-container .text-icon-container .text .signin {
+    display: none;
+}
+
+.login-btn-container .text-icon-container .text .signin-saved {
     display: none;
 }
 
 
-.browse-bottom-full-container{
+.browse-bottom-full-container {
     width: 100%;
     margin: 0px auto;
     flex: 1 0 auto;
+    max-width: 400px;
 }
 
-.browse-bottom-full-container-2{
+.browse-bottom-full-container-2 {
     margin: 20px 20px 0px;
 }
 
-.browse-bottom-inner-container{
+.browse-bottom-inner-container {
     border-radius: 12px;
     border: 1px solid #f1f1f1ff;
     padding: 20px;
     background-color: #f7f7f7ff;
 }
 
-.browse-bottom-full-container .text-icon-full-container{
+.browse-bottom-full-container .text-icon-full-container {
     display: flex;
     text-align: left;
 }
 
-.browse-bottom-full-container .icon-container{
+.browse-bottom-full-container .icon-container {
     width: 60px;
     height: 60px;
     border-radius: 12px;
@@ -498,17 +502,17 @@ div {
 
 }
 
-.browse-bottom-full-container .icon-container svg{
+.browse-bottom-full-container .icon-container svg {
     flex-shrink: 0;
 }
 
-.browse-bottom-full-container .text-container{
+.browse-bottom-full-container .text-container {
     max-width: 100%;
 
 }
 
-.browse-bottom-full-container .text-container .browse-text{
-    color:#191919ff ;
+.browse-bottom-full-container .text-container .browse-text {
+    color: #191919ff;
     font-family: 'TT Norms bold';
     font-size: 18px;
     font-weight: 700;
@@ -518,9 +522,9 @@ div {
 
 }
 
-.browse-bottom-full-container .text-container .delivery-text{
+.browse-bottom-full-container .text-container .delivery-text {
     margin-left: 4px;
-    margin-top: 2px ;
+    margin-top: 2px;
     font-family: "TT Norms medium";
     color: #606060ff;
     font-size: 14px;
@@ -530,11 +534,11 @@ div {
     display: block;
 }
 
-.browse-bottom-full-container .rating-star-container{
+.browse-bottom-full-container .rating-star-container {
     margin-top: 2px;
 }
 
-.browse-bottom-full-container .continue-app-btn{
+.browse-bottom-full-container .continue-app-btn {
     margin-top: 16px;
     background-color: #eb1700ff;
     width: 100%;
@@ -549,7 +553,7 @@ div {
     position: relative;
 }
 
-.browse-bottom-full-container .continue-app-btn .btn-text{
+.browse-bottom-full-container .continue-app-btn .btn-text {
     width: 100%;
     color: currentColor;
     font-family: "TT Norms bold";
@@ -559,9 +563,17 @@ div {
     line-height: 22px;
     letter-spacing: -0.01px;
     align-items: center;
-    justify-content:center;
-    
+    justify-content: center;
+
 }
+
+/* location-svg hiding */
+@media screen and (max-width:767px) {
+    .input-btn-container .input-container .search-container .location-svg {
+        display: none;
+    }
+}
+
 
 
 /* tablet screen */
@@ -569,12 +581,13 @@ div {
     header {
         display: none;
     }
-    .browse-bottom-full-container{
+
+    .browse-bottom-full-container {
         display: none;
     }
 
-    .main-container .center-img-container{
-        background:url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
+    .main-container .center-img-container {
+        background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
         height: 650px;
         padding: 0px 8px;
         display: flex;
@@ -588,20 +601,20 @@ div {
         background-position: center center;
     }
 
-    .main-container .center-heading{
+    .main-container .center-heading {
         margin-top: 24px;
         margin-bottom: 24px;
     }
 
-    .discover-full-container{
+    .discover-full-container {
         flex-grow: 1;
     }
 
-    .discover-full-container .buttons{
+    .discover-full-container .buttons {
         display: none;
     }
 
-    .discover-full-container .sign-buttons{
+    .discover-full-container .sign-buttons {
         padding-left: 16px;
         padding-right: 24px;
         display: flex;
@@ -609,7 +622,7 @@ div {
         gap: 8px;
     }
 
-    .discover-full-container .sign-buttons .signin-btn{
+    .discover-full-container .sign-buttons .signin-btn {
         position: relative;
         max-width: 100%;
         display: inline-flex;
@@ -628,7 +641,7 @@ div {
 
     }
 
-    .discover-full-container .signin-btn span{
+    .discover-full-container .signin-btn span {
         padding: 0px 12px;
         max-width: 100%;
         font-family: "TT Norms bold";
@@ -636,10 +649,10 @@ div {
         font-weight: 700;
         line-height: 22px;
         letter-spacing: -0.01px;
-        
+
     }
 
-    .discover-full-container .signup-btn{
+    .discover-full-container .signup-btn {
         position: relative;
         max-width: 100%;
         display: inline-flex;
@@ -653,7 +666,7 @@ div {
         color: #191919ff;
     }
 
-    .discover-full-container .signup-btn span{
+    .discover-full-container .signup-btn span {
         padding: 0px 12px;
         max-width: 100%;
         font-family: "TT Norms bold";
@@ -664,7 +677,7 @@ div {
         letter-spacing: -0.01px;
     }
 
-    .discover-full-container .open-login-btn{
+    .discover-full-container .open-login-btn {
         position: absolute;
         left: 0px;
         right: 0px;
@@ -672,38 +685,130 @@ div {
         margin-top: 16px;
         z-index: 1;
     }
-    
-    .input-btn-container .input-form input{
+
+    .input-btn-container .input-form input {
         padding-top: 2px;
         padding-bottom: 2px;
         padding-right: 68px;
     }
-    .input-btn-container .input-container .search-container .search-svg{
+
+    .input-btn-container .input-container .search-container .search-svg {
         display: none;
     }
 
-    .input-btn-container .input-container .search-container .location-svg{
-       margin-left: 4px;
+    .input-btn-container .input-container .search-container .location-svg {
+        margin-left: 4px;
     }
 
-    .input-btn-container .right-arrow button{
-        right:-8px
+    .input-btn-container .right-arrow button {
+        right: -8px
     }
-    .login-btn-container .text-icon-container .text .signin{
+
+    .login-btn-container .text-icon-container .text .signin {
         width: 100%;
-    font-family: 'TT Norms bold';
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.01px;
-    display: block;
-    text-decoration: none;
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
+        font-family: 'TT Norms bold';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-decoration: none;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
     }
-    .login-btn-container .text-icon-container .text .login{
+
+    .login-btn-container .text-icon-container .text .login {
         display: none;
     }
+
+    .login-btn-container .text-icon-container .text .signin-saved {
+        display: none;
+    }
+
+}
+
+
+
+
+/* center text size increse */
+@media screen and (min-width:769px) {
+    .discover-full-container .discover-text h1 {
+        max-width: 750px;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.01px;
+    }
+}
+
+/* labtop (medium) screen */
+@media screen and (min-width:960px) {
+    .svg-container .logo-svg {
+        width: 42px;
+        height: 24px;
+    }
+
+    .title-svg-container .title-svg {
+        width: 155px;
+        height: 18px;
+        margin-left: 4px;
+    }
+
+
+
+    .login-btn-container .text-icon-container .text .signin {
+        display: none;
+    }
+
+    .login-btn-container .text-icon-container .text .signin-saved {
+
+        width: 100%;
+        font-family: 'TT Norms bold';
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.01px;
+        display: block;
+        text-decoration: none;
+        max-width: 100%;
+        overflow: hidden;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+
+
+}
+
+/* arrow color and background change */
+@media screen and (min-width:1184px) {
+    .input-btn-container .right-arrow button {
+        background-color: #eb1700ff;
+    }
+
+    .input-btn-container .right-arrow button .black-arrow {
+        display: none;
+    }
+}
+
+/* white arrow hiding */
+@media screen and (max-width:1183px) {
+    .input-btn-container .right-arrow button .white-arrow {
+        display: none;
+    }
+}
+
+
+/* laptop (large) screen */
+
+@media screen and (min-width:1440px) {
+    .input-btn-container .right-arrow button .white-arrow {
+        background-color: #eb1700ff;
+    }
+
+    /* .input-btn-container .right-arrow button .black-arrow {
+        display: none;
+    } */
 }
