@@ -445,7 +445,7 @@ div {
     justify-content: center;
     margin-left: 4px;
 }
-.login-btn-container .text-icon-container .text span{
+.login-btn-container .text-icon-container .text .login{
     width: 100%;
     font-family: 'TT Norms bold';
     font-size: 14px;
@@ -460,6 +460,9 @@ div {
     padding: 0px;
 }
 
+.login-btn-container .text-icon-container .text .signin{
+    display: none;
+}
 
 
 .browse-bottom-full-container{
@@ -585,6 +588,122 @@ div {
         background-position: center center;
     }
 
-    
+    .main-container .center-heading{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 
+    .discover-full-container{
+        flex-grow: 1;
+    }
+
+    .discover-full-container .buttons{
+        display: none;
+    }
+
+    .discover-full-container .sign-buttons{
+        padding-left: 16px;
+        padding-right: 24px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .discover-full-container .sign-buttons .signin-btn{
+        position: relative;
+        max-width: 100%;
+        display: inline-flex;
+        min-height: 40px;
+        width: auto;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 20px;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        background-color: #eb1700ff;
+        color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+
+    }
+
+    .discover-full-container .signin-btn span{
+        padding: 0px 12px;
+        max-width: 100%;
+        font-family: "TT Norms bold";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+        
+    }
+
+    .discover-full-container .signup-btn{
+        position: relative;
+        max-width: 100%;
+        display: inline-flex;
+        min-height: 40px;
+        width: auto;
+        align-items: center;
+        justify-content: flex-start;
+        border-radius: 20px;
+        text-decoration: none;
+        background-color: #ffffff;
+        color: #191919ff;
+    }
+
+    .discover-full-container .signup-btn span{
+        padding: 0px 12px;
+        max-width: 100%;
+        font-family: "TT Norms bold";
+        font-size: 18px;
+        font-weight: 700;
+        color: #606060ff;
+        line-height: 22px;
+        letter-spacing: -0.01px;
+    }
+
+    .discover-full-container .open-login-btn{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        margin-top: 16px;
+        z-index: 1;
+    }
+    
+    .input-btn-container .input-form input{
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 68px;
+    }
+    .input-btn-container .input-container .search-container .search-svg{
+        display: none;
+    }
+
+    .input-btn-container .input-container .search-container .location-svg{
+       margin-left: 4px;
+    }
+
+    .input-btn-container .right-arrow button{
+        right:-8px
+    }
+    .login-btn-container .text-icon-container .text .signin{
+        width: 100%;
+    font-family: 'TT Norms bold';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-decoration: none;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    }
+    .login-btn-container .text-icon-container .text .login{
+        display: none;
+    }
 }
