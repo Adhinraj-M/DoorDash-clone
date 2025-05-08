@@ -1,181 +1,1220 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'TT Norms bold';
-    src: url("/font/TTNorms-Bold.woff2") format("woff2"),
+  font-family: "TT Norms bold";
+  src: url("/font/TTNorms-Bold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'TT Norms medium';
-    src: url("/font/TTNorms-Medium.woff2") format("woff2"),
+  font-family: "TT Norms medium";
+  src: url("/font/TTNorms-Medium.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'TT Norms regular';
-    src: url("/font/TTNorms-Regular.woff2") format("woff2"),
+  font-family: "TT Norms regular";
+  src: url("/font/TTNorms-Regular.woff2") format("woff2");
 }
 
-.fixed-header-container{
-    display: none;
+.fixed-header-container {
+  display: none;
 }
 
 .container {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 div {
-    display: block;
+  display: block;
 }
 
 .self-close {
-    height: 0;
-    margin-top: -64px;
-    position: absolute;
+  height: 0;
+  margin-top: -64px;
+  position: absolute;
 }
 
 .header-container {
-    border: none;
-    margin-top: 16px;
+  border: none;
+  margin-top: 16px;
 }
 
 .header-full-container {
-    max-width: 100%;
-    width: 100%;
-    display: flex;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto auto;
-    column-gap: 8px;
-    padding: 8px;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 8px;
+  padding: 8px;
 }
 
 .logo-main-contaier {
-    align-self: center;
-    grid-area: 2/1;
+  align-self: center;
+  grid-area: 2/1;
 }
 
 .logo-container {
-    max-width: 100%;
-    display: grid;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    flex-direction: row;
+  max-width: 100%;
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 .header-logo-icon {
-    border-radius: 12px;
-    border: 1px solid #f1f1f1ff;
+  border-radius: 12px;
+  border: 1px solid #f1f1f1ff;
 }
 
 .header-text-container {
-    flex-grow: 1;
-    overflow: hidden;
-    flex-basis: 100%;
-
+  flex-grow: 1;
+  overflow: hidden;
+  flex-basis: 100%;
 }
 
 .header-text-container .text-first-line {
-    color: #191919ff;
-    font-size: 16px;
-    font-weight: bolder;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-    font-family: 'TT Norms bold';
-
+  color: #191919ff;
+  font-size: 16px;
+  font-weight: bolder;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  font-family: "TT Norms bold";
 }
 
 .header-text-container .text-second-line {
-    color: #606060ff;
+  color: #606060ff;
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
+.rating-star-container {
+  max-width: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.rating-star-container .first-star {
+  margin: 0 2px;
+}
+
+.rating-star-container svg {
+  margin-right: 2px;
+}
+
+.rating-star-container .rating-text {
+  font-family: "TT Norms medium";
+  margin-left: 4px;
+  color: #606060ff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
+.open-button-container {
+  align-self: center;
+  grid-area: 2/3;
+}
+
+.open-button-container a {
+  position: relative;
+  max-width: 100%;
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+  align-self: center;
+  border: none;
+  text-decoration: none;
+  background-color: #eb1700ff;
+}
+
+.open-button-container span {
+  font-family: "TT Norms bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0 12px;
+  margin-bottom: 1px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-container .center-img-container {
+  background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
+  height: 550px;
+  padding: 0px 8px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-container .center-heading {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.center-heading .svg-container {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.center-heading .title-svg-container {
+  margin-left: 8px;
+  line-height: 0px;
+}
+
+.discover-full-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover-full-container .discover-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.discover-text h1 {
+  max-width: 350px;
+  letter-spacing: 0px;
+  font-size: 22px;
+  line-height: 28px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "TT Norms bold";
+  font-weight: 700;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.open-login-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 79px;
+  margin-top: 16px;
+  z-index: 1;
+}
+
+.open-login-btn .buttons {
+  padding-right: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.open-login-btn .buttons .login-btn {
+  position: relative;
+  display: inline-flex;
+  min-height: 32px;
+  width: auto;
+  font-family: "TT Norms bold";
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #ffffffff;
+  color: #191919ff;
+  max-width: 100%;
+}
+
+.discover-full-container .sign-buttons {
+  display: none;
+}
+
+.open-login-btn .buttons .login-btn span {
+  display: block;
+  flex-grow: 1;
+  max-width: 100%;
+  opacity: 1;
+  padding: 0px 12px;
+  letter-spacing: -0.01px;
+  margin-bottom: 1px;
+}
+
+.open-login-btn .buttons .open-app-btn {
+  position: relative;
+  max-width: 100%;
+  align-items: center;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  background-color: #eb1700ff;
+  color: #ffffff;
+  font-family: "TT Norms bold";
+}
+
+.open-login-btn .buttons .open-app-btn span {
+  display: block;
+  flex-grow: 1;
+  max-width: 100%;
+  opacity: 1;
+  padding: 0px 12px;
+  margin-top: 6px;
+  letter-spacing: -0.01px;
+}
+
+.input-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.input-btn-container .input-container {
+  width: 100%;
+  font-family: "TT Norms medium";
+  font-size: 16px;
+  line-height: 15px;
+  letter-spacing: -0.01px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  padding: 3px 16px;
+  border: none;
+  border-radius: 32px;
+  background-color: #ffffff;
+}
+
+.input-btn-container .search-container {
+  max-width: 100%;
+  margin-right: 0px;
+  margin-top: 1px;
+}
+
+.input-btn-container .input-container .input-form {
+  margin: 12px;
+  flex-grow: 1;
+  background: inherit;
+  max-width: 100%;
+}
+
+.input-btn-container .input-form input {
+  font-family: "TT Norms medium";
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  font-weight: 500;
+  width: 100%;
+  appearance: none;
+  outline: none;
+  display: flex;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(25, 25, 25);
+  background: #ffffff;
+}
+
+.input-btn-container .right-arrow {
+  max-width: 100%;
+}
+
+.input-btn-container .right-arrow button {
+  position: relative;
+  max-width: 100%;
+  display: inline-flex;
+  min-height: 40px;
+  border-radius: 9999px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding: 0px;
+  justify-content: center;
+}
+
+.login-btn-container {
+  margin-top: 16px;
+  background-color: #ffffff;
+  color: #191919ff;
+  text-align: center;
+  width: auto;
+  display: inline-flex;
+  min-height: 32px;
+  position: relative;
+  align-items: center;
+  border: none;
+  padding: 0px;
+  border-radius: 20px;
+  text-decoration: none;
+  justify-content: flex-start;
+  max-width: 100%;
+  font-family: "TT Norms bold";
+}
+
+.login-btn-container .text-icon-container {
+  display: block;
+  flex-grow: 1;
+  max-width: 100%;
+  opacity: 1;
+  padding: 0px 12px;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.login-btn-container .text-icon-container .text-icon-container-2 {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.login-btn-container .text-icon-container .login-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn-container .text-icon-container .text {
+  flex-grow: 2;
+  min-width: 0px;
+  display: flex;
+  justify-content: center;
+  margin-left: 4px;
+}
+
+.login-btn-container .text-icon-container .text .login {
+  width: 100%;
+  font-family: "TT Norms bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+  display: block;
+  text-decoration: none;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+
+.login-btn-container .text-icon-container .text .signin {
+  display: none;
+}
+
+.login-btn-container .text-icon-container .text .signin-saved {
+  display: none;
+}
+
+.browse-bottom-full-container {
+  width: 100%;
+  margin: 0px auto;
+  flex: 1 0 auto;
+  max-width: 400px;
+}
+
+.browse-bottom-full-container-2 {
+  margin: 20px 20px 0px;
+}
+
+.browse-bottom-inner-container {
+  border-radius: 12px;
+  border: 1px solid #f1f1f1ff;
+  padding: 20px;
+  background-color: #f7f7f7ff;
+}
+
+.browse-bottom-full-container .text-icon-full-container {
+  display: flex;
+  text-align: left;
+}
+
+.browse-bottom-full-container .icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  border: 1px solid #f1f1f1ff;
+  background-color: #ffffff;
+  margin-right: 8px;
+  padding: 8px;
+}
+
+.browse-bottom-full-container .icon-container svg {
+  flex-shrink: 0;
+}
+
+.browse-bottom-full-container .text-container {
+  max-width: 100%;
+}
+
+.browse-bottom-full-container .text-container .browse-text {
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  display: block;
+  letter-spacing: -0.01px;
+}
+
+.browse-bottom-full-container .text-container .delivery-text {
+  margin-left: 4px;
+  margin-top: 2px;
+  font-family: "TT Norms medium";
+  color: #606060ff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+  display: block;
+}
+
+.browse-bottom-full-container .rating-star-container {
+  margin-top: 2px;
+}
+
+.browse-bottom-full-container .continue-app-btn {
+  margin-top: 16px;
+  background-color: #eb1700ff;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  align-content: center;
+  min-height: 40px;
+  position: relative;
+}
+
+.browse-bottom-full-container .continue-app-btn .btn-text {
+  width: 100%;
+  color: currentColor;
+  font-family: "TT Norms bold";
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-header-container {
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  padding: 4px 8px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.fixed-header-container .fixed-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.fixed-header-container .fixed-header .logo-svg {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.fixed-button-container {
+  padding-right: 0px;
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.fixed-button-container .login-btn {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  display: inline-flex;
+  min-height: 32px;
+  width: auto;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffffff;
+  color: #191919ff;
+}
+
+.fixed-button-container .login-btn span {
+  padding: 0px 12px;
+  color: rgb(25, 25, 25);
+  font-family: "TT Norms bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  width: 100%;
+  letter-spacing: -0.01px;
+}
+
+.fixed-button-container .open-app-btn {
+  position: relative;
+  max-width: 100%;
+  display: inline-flex;
+  min-height: 32px;
+  width: auto;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 20px;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: #eb1700ff;
+  color: #ffffff;
+  padding: 0px;
+  margin-right: 0px;
+}
+
+.fixed-button-container .open-app-btn span {
+  color: rgb(255, 255, 255);
+  font-family: "TT Norms bold";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  padding: 0px 12px;
+}
+
+.dasher-main-container {
+  max-width: 768px;
+  margin: 0px auto;
+}
+.dasher-sub-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0px;
+  padding: 8px;
+}
+
+.dasher-sub-container-2 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.dasher-main-container .dasher-container {
+  display: flex;
+  width: 100%;
+  min-width: 360px;
+  flex-flow: row;
+  max-width: 100%;
+  padding: 16px;
+}
+
+.dasher-main-container .dasher-container .img-container {
+  margin-right: 32px;
+}
+.dasher-main-container .dasher-container .img-container img {
+  height: 88px;
+  width: 88px;
+}
+
+.dasher-main-container .dasher-container .dasher-text {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  max-width: 250px;
+}
+.dasher-main-container .dasher-container .dasher-text h2 {
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.01px;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+.dasher-main-container .dasher-container .dasher-text-2 {
+  max-width: 100%;
+  display: block;
+}
+
+.dasher-main-container .dasher-container .dasher-text h3 {
+  color: #191919ff;
+  font-family: "TT Norms medium";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.01px;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.dasher-main-container .dasher-container .start-earning-btn {
+  border: 0px;
+  padding: 0px;
+  margin: 12px 0px 0px 0px;
+  outline: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.dasher-main-container .dasher-container .start-earning-btn span {
+  color: #eb1700ff;
+  font-family: "TT Norms bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
+.dasher-main-container .dasher-container .start-earning-btn svg {
+  margin-left: 4px;
+}
+
+.main-middle-container {
+  width: 100%;
+}
+
+.main-middle-container .first-image-text-container {
+  width: 100%;
+}
+
+.main-middle-container .first-image-text-container-2 {
+  margin-bottom: -300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 90%;
+  align-items: center;
+}
+
+.main-middle-container .image-container {
+  width: 100%;
+}
+
+.main-middle-container .image-container .mob-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.main-middle-container .texts {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-middle-container .texts h2 {
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  max-width: 90%;
+  margin-top: 20px;
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01px;
+  padding: 0;
+}
+
+.main-middle-container .first-image-text-container-2 .sub-head {
+  margin-top: 10px;
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  padding: 0px;
+}
+.main-middle-container .para-text {
+  margin-top: 10px;
+  color: #191919ff;
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
+.main-middle-container .para-text-stores{
+    margin-top: 10px;
+    color: #191919ff;
     font-family: "TT Norms medium";
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: -0.01px;
-
 }
 
-.rating-star-container {
-    max-width: 100%;
+.main-middle-container .btn-container {
+  margin-top: 20px;
+}
+
+.main-middle-container .btn-container a {
+  position: relative;
+  max-width: 100%;
+  display: inline-flex;
+  min-height: 32px;
+  width: auto;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  background-color: #eb1700ff;
+  color: #ffffff;
+}
+
+.main-middle-container .btn-container a span {
+  padding: 0px 12px;
+  width: 100%;
+  color: currentColor;
+  font-family: "TT Norms bold";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+  max-width: 100%;
+}
+
+.main-middle-container .bg-pink-container {
+  width: 100%;
+}
+.main-middle-container .para-text-2 {
+  margin-top: 10px;
+  color: #191919ff;
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
+.main-middle-container .bg-pink-container-2 {
+  background-color: rgb(254, 241, 238);
+  padding-top: 320px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  min-width: 90%;
+  align-items: center;
+}
+
+.main-middle-container .image-container-three {
+  background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png")
+    center center / cover;
+  position: relative;
+  height: 350px;
+}
+
+.main-middle-container .image-container-2 {
+  background-color: rgba(30, 30, 30, 0.6);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  place-content: center;
+}
+
+.main-middle-container .image-container-three .text-above-image {
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-middle-container .image-container-three h2 {
+  text-align: center;
+  color: white;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+  max-width: 90%;
+  margin-top: 20px;
+  font-family: "TT Norms bold";
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.01px;
+  margin: 0px;
+}
+
+.main-middle-container .image-container-three .text-second-line {
+  text-align: center;
+  color: white;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+  margin-top: 10px;
+  font-family: "TT Norms bold";
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+}
+
+.main-middle-container .image-container-three .last-small-text {
+  text-align: center;
+  color: white;
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 8px);
+  margin-top: 10px;
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
+.main-middle-container .first-image-text-container-3 {
+   
     display: flex;
-    -webkit-box-align: center;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
     align-items: center;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    flex-direction: row;
+  }
+
+.helping-text-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(254, 241, 238);
+  padding: 40px 20px 20px;
+  width: 100%;
 }
 
-.rating-star-container .first-star {
-    margin: 0 2px;
+.helping-text-container span {
+  text-align: center;
+  max-width: 300px;
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01px;
 }
 
-.rating-star-container svg {
-    margin-right: 2px;
-
+.scrollable-img-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 100%;
+  background-color: rgb(254, 241, 238);
 }
 
-.rating-star-container .rating-text {
-    font-family: 'TT Norms medium';
-    margin-left: 4px;
-    color: #606060ff;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
+.scrollable-img-container .scrollable-img-text {
+  margin-left: 5%;
+  margin-right: -10%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 90%;
+  align-items: center;
+}
+
+.scrollable-img-container .scrollable-img-text .img-wrapper {
+  width: 100%;
+}
+
+.scrollable-img-container .img-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.scrollable-img-container .scrollable-img-text .texts {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.age-text{
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: "TT Norms bold";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
     letter-spacing: -0.01px;
 
 }
 
-.open-button-container {
-    align-self: center;
-    grid-area: 2/3;
+.unlock-text-container{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 40px 20px 20px;
+    width: 100%;
+}
+
+.unlock-text-container .unlock-text{
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-size: 24px;
+    font-family: "TT Norms bold";
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
 
 }
 
-.open-button-container a {
+.available-cities-container{
+    display: contents;
+}
+
+.available-cities-container .heading-container{
+    max-width: 100%;
+    padding: 24px 16px;
+    width: 100%;
+
+}
+
+.available-cities-container .heading-container h2{
+    text-align: center;
+    font-family: "TT Norms bold";
+    margin-bottom: 20px;
+    color:#191919ff ;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.available-cities-container  .cities-cate-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.available-cities-container  .cities-cate-container .cate-container{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.cities-cate-container .cate-1{
+    border-bottom: 3px solid transparent;
+    box-shadow: 0 3px 0 #191919ff;
+    padding-bottom: 12px;
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out;
+}
+
+.cities-cate-container .cate-container .cate-1 span{
+    color: #191919ff;
+    font-family: "TT Norms bold";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+
+}
+
+.cities-cate-container .cate-2{
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 2px 0  #f1f1f1ff;
+    padding-bottom: 12px;
+    width: 33.33%;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out;
+}
+.cities-cate-container .cate-2 span{
+    color: #606060ff;
+    font-family: "TT Norms bold";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+
+}
+
+.available-cities-container .cities-name-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.cities-name-container .cities-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.cities-name-container .cities-container .city-name{
+    text-decoration: none;
+    width: 100%;
+    white-space: nowrap;
+    display: block;
+}
+
+.cities-name-container .cities-container .city-name span{
+    color: #191919ff;
+    font-family: "TT Norms medium";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+
+}
+
+.cities-name-container .see-more-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.cities-name-container .see-more-container span{
+    margin-right: 8px;
+    color:#191919ff ;
+    font-family: "TT Norms bold";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.01px;
+}
+
+.cities-name-container .see-more-container  button{
     position: relative;
     max-width: 100%;
     display: inline-flex;
-    min-height: 32px;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 20px;
-    align-self: center;
+    min-height: 40px;
+    border-radius: 999px;
     border: none;
-    text-decoration: none;
-    background-color: #eb1700ff;
-
-
-}
-
-.open-button-container span {
-    font-family: 'TT Norms bold';
-    font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
-    padding: 0 12px;
-    margin-bottom: 1px;
-}
-
-.main-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    cursor: pointer;
+    background-color: #f1f1f1ff;
+    color: #191919ff;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
     align-items: center;
+    justify-content: center;
 }
 
-.main-container .center-img-container {
+/*  hiding in mobile*/
+@media screen and (max-width: 767px) {
+  .input-btn-container .input-container .search-container .location-svg {
+    display: none;
+  }
+
+  .fixed-header .sign-buttons {
+    display: none;
+  }
+  /* .main-middle-container .tablet-container{
+        display: none;
+    } */
+  .main-middle-container .image-container .tablet-plus-img {
+    display: none;
+  }
+  .scrollable-img-container .img-wrapper .tablet-plus-img{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width:481px) {
+    .available-cities-container .heading-container {
+        width: 100%;
+        max-width: 1130px;
+        padding: 48px 0px;
+        margin: 0px auto;
+    }
+}
+
+/* tablet screen */
+@media screen and (min-width: 768px) {
+  header {
+    display: none;
+  }
+
+  .browse-bottom-full-container {
+    display: none;
+  }
+
+  .main-container .center-img-container {
     background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
-    height: 550px;
+    height: 650px;
     padding: 0px 8px;
     display: flex;
     flex-flow: column;
@@ -186,265 +1225,112 @@ div {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-}
+  }
 
-.main-container .center-heading {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.center-heading .svg-container {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-}
-
-
-
-
-.center-heading .title-svg-container {
-    margin-left: 8px;
-    line-height: 0px;
-}
-
-.discover-full-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.discover-full-container .discover-text {
-    display: flex;
-    justify-content: center;
+  .main-container .center-heading {
+    margin-top: 24px;
     margin-bottom: 24px;
+  }
 
-}
+  .discover-full-container {
+    flex-grow: 1;
+  }
 
-.discover-text h1 {
-    max-width: 350px;
-    letter-spacing: 0px;
-    font-size: 22px;
-    line-height: 28px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'TT Norms bold';
-    font-weight: 700;
-    display: block;
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-}
+  .discover-full-container .buttons {
+    display: none;
+  }
 
-.open-login-btn {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 79px;
-    margin-top: 16px;
-    z-index: 1;
-}
-
-.open-login-btn .buttons {
+  .discover-full-container .sign-buttons {
+    padding-left: 16px;
     padding-right: 24px;
     display: flex;
     justify-content: flex-end;
     gap: 8px;
-}
+  }
 
-.open-login-btn .buttons .login-btn {
-    position: relative;
-    display: inline-flex;
-    min-height: 32px;
-    width: auto;
-    font-family: "TT Norms bold";
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 20px;
-    text-decoration: none;
-    background-color: #ffffffff;
-    color: #191919ff;
-    max-width: 100%;
-
-}
-
-.discover-full-container .sign-buttons {
-    display: none;
-}
-
-.open-login-btn .buttons .login-btn span {
-    display: block;
-    flex-grow: 1;
-    max-width: 100%;
-    opacity: 1;
-    padding: 0px 12px;
-    letter-spacing: -0.01px;
-    margin-bottom: 1px;
-}
-
-.open-login-btn .buttons .open-app-btn {
-    position: relative;
-    max-width: 100%;
-    align-items: center;
-    border-radius: 20px;
-    text-decoration: none;
-    border: none;
-    background-color: #eb1700ff;
-    color: #ffffff;
-    font-family: "TT Norms bold";
-}
-
-.open-login-btn .buttons .open-app-btn span {
-    display: block;
-    flex-grow: 1;
-    max-width: 100%;
-    opacity: 1;
-    padding: 0px 12px;
-    margin-top: 6px;
-    letter-spacing: -0.01px;
-
-}
-
-.input-login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 100%;
-
-}
-
-
-.input-btn-container .input-container {
-    width: 100%;
-    font-family: 'TT Norms medium';
-    font-size: 16px;
-    line-height: 15px;
-    letter-spacing: -0.01px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    padding: 3px 16px;
-    border: none;
-    border-radius: 32px;
-    background-color: #ffffff;
-}
-
-.input-btn-container .search-container {
-    max-width: 100%;
-    margin-right: 0px;
-    margin-top: 1px;
-}
-
-.input-btn-container .input-container .input-form {
-    margin: 12px;
-    flex-grow: 1;
-    background: inherit;
-    max-width: 100%;
-
-}
-
-.input-btn-container .input-form input {
-    font-family: "TT Norms medium";
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-    font-weight: 500;
-    width: 100%;
-    appearance: none;
-    outline: none;
-    display: flex;
-    border: none;
-    padding: 0px;
-    margin: 0px;
-    color: rgb(25, 25, 25);
-    background: #ffffff;
-
-}
-
-.input-btn-container .right-arrow {
-    max-width: 100%;
-
-}
-
-.input-btn-container .right-arrow button {
+  .discover-full-container .sign-buttons .signin-btn {
     position: relative;
     max-width: 100%;
     display: inline-flex;
     min-height: 40px;
-    border-radius: 9999px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
     border: none;
     text-decoration: none;
     text-align: center;
-    background-color: #ffffff;
-    width: 40px;
-    height: 40px;
-    align-items: center;
+    background-color: #eb1700ff;
+    color: #ffffff;
+    margin: 0px;
     padding: 0px;
-    justify-content: center;
-}
+  }
 
-.login-btn-container {
-    margin-top: 16px;
-    background-color: #ffffff;
-    color: #191919ff;
-    text-align: center;
-    width: auto;
-    display: inline-flex;
-    min-height: 32px;
+  .discover-full-container .signin-btn span {
+    padding: 0px 12px;
+    max-width: 100%;
+    font-family: "TT Norms bold";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+  }
+
+  .discover-full-container .signup-btn {
     position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
     align-items: center;
-    border: none;
-    padding: 0px;
+    justify-content: flex-start;
     border-radius: 20px;
     text-decoration: none;
-    justify-content: flex-start;
-    max-width: 100%;
-    font-family: 'TT Norms bold';
-}
+    background-color: #ffffff;
+    color: #191919ff;
+  }
 
-.login-btn-container .text-icon-container {
-    display: block;
-    flex-grow: 1;
-    max-width: 100%;
-    opacity: 1;
+  .discover-full-container .signup-btn span {
     padding: 0px 12px;
-    transition: opacity 0.15s ease-in-out;
-}
-
-.login-btn-container .text-icon-container .text-icon-container-2 {
     max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
+    font-family: "TT Norms bold";
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060ff;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+  }
 
-.login-btn-container .text-icon-container .login-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .discover-full-container .open-login-btn {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin-top: 16px;
+    z-index: 1;
+  }
 
+  .input-btn-container .input-form input {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 68px;
+  }
 
-.login-btn-container .text-icon-container .text {
-    flex-grow: 2;
-    min-width: 0px;
-    display: flex;
-    justify-content: center;
+  .input-btn-container .input-container .search-container .search-svg {
+    display: none;
+  }
+
+  .input-btn-container .input-container .search-container .location-svg {
     margin-left: 4px;
-}
+  }
 
-.login-btn-container .text-icon-container .text .login {
+  .input-btn-container .right-arrow button {
+    right: -8px;
+  }
+
+  .login-btn-container .text-icon-container .text .signin {
     width: 100%;
-    font-family: 'TT Norms bold';
+    font-family: "TT Norms bold";
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -455,184 +1341,33 @@ div {
     overflow: hidden;
     margin: 0px;
     padding: 0px;
-}
+  }
 
-.login-btn-container .text-icon-container .text .signin {
+  .login-btn-container .text-icon-container .text .login {
     display: none;
-}
+  }
 
-.login-btn-container .text-icon-container .text .signin-saved {
+  .login-btn-container .text-icon-container .text .signin-saved {
     display: none;
-}
+  }
 
+  .fixed-button-container {
+    display: none;
+  }
 
-.browse-bottom-full-container {
-    width: 100%;
-    margin: 0px auto;
-    flex: 1 0 auto;
-    max-width: 400px;
-}
-
-.browse-bottom-full-container-2 {
-    margin: 20px 20px 0px;
-}
-
-.browse-bottom-inner-container {
-    border-radius: 12px;
-    border: 1px solid #f1f1f1ff;
-    padding: 20px;
-    background-color: #f7f7f7ff;
-}
-
-.browse-bottom-full-container .text-icon-full-container {
-    display: flex;
-    text-align: left;
-}
-
-.browse-bottom-full-container .icon-container {
-    width: 60px;
-    height: 60px;
-    border-radius: 12px;
-    border: 1px solid #f1f1f1ff;
-    background-color: #ffffff;
-    margin-right: 8px;
-    padding: 8px;
-
-}
-
-.browse-bottom-full-container .icon-container svg {
-    flex-shrink: 0;
-}
-
-.browse-bottom-full-container .text-container {
-    max-width: 100%;
-
-}
-
-.browse-bottom-full-container .text-container .browse-text {
-    color: #191919ff;
-    font-family: 'TT Norms bold';
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 20px;
-    display: block;
-    letter-spacing: -0.01px;
-
-}
-
-.browse-bottom-full-container .text-container .delivery-text {
-    margin-left: 4px;
-    margin-top: 2px;
-    font-family: "TT Norms medium";
-    color: #606060ff;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: -0.01px;
-    display: block;
-}
-
-.browse-bottom-full-container .rating-star-container {
-    margin-top: 2px;
-}
-
-.browse-bottom-full-container .continue-app-btn {
-    margin-top: 16px;
-    background-color: #eb1700ff;
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    text-align: center;
-    border: none;
-    border-radius: 20px;
-    justify-content: center;
-    align-content: center;
-    min-height: 40px;
-    position: relative;
-}
-
-.browse-bottom-full-container .continue-app-btn .btn-text {
-    width: 100%;
-    color: currentColor;
-    font-family: "TT Norms bold";
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.fixed-header-container {
-    width: 100%;
-    max-width: 100%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 100;
-    background-color: rgb(255, 255, 255);
-    padding: 4px 8px;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-
-.fixed-header-container .fixed-header {
-    display: flex;
-    flex-direction: row;
-}
-
-.fixed-header-container .fixed-header .logo-svg {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-}
-
-.fixed-button-container {
-    padding-right: 0px;
-    flex: 1 1 0%;
+  .fixed-header-container .sign-buttons {
+    padding-left: 16px;
+    /* padding-right: 24px; */
     display: flex;
     justify-content: flex-end;
     gap: 8px;
-}
+  }
 
-.fixed-button-container .login-btn {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    max-width: 100%;
-    display: inline-flex;
-    min-height: 32px;
-    width: auto;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 20px;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    background-color: #ffffff;
-    color: #191919ff;
-
-}
-
-.fixed-button-container .login-btn span {
-    padding: 0px 12px;
-    color: rgb(25, 25, 25);
-    font-family: "TT Norms bold";
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
-    width: 100%;
-    letter-spacing: -0.01px;
-}
-
-.fixed-button-container .open-app-btn {
+  .fixed-header-container .sign-buttons .signin-btn {
     position: relative;
     max-width: 100%;
     display: inline-flex;
-    min-height: 32px;
+    min-height: 40px;
     width: auto;
     align-items: center;
     justify-content: flex-start;
@@ -642,516 +1377,399 @@ div {
     text-align: center;
     background-color: #eb1700ff;
     color: #ffffff;
+    margin: 0px;
     padding: 0px;
-    margin-right: 0px;
-}
+  }
 
-.fixed-button-container .open-app-btn span {
-    color: rgb(255, 255, 255);
+  .fixed-header-container .sign-buttons .signin-btn span {
+    padding: 0px 12px;
+    max-width: 100%;
     font-family: "TT Norms bold";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 22px;
     letter-spacing: -0.01px;
+  }
+
+  .fixed-header-container .signup-btn {
+    position: relative;
+    max-width: 100%;
+    display: inline-flex;
+    min-height: 40px;
+    width: auto;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #191919ff;
+  }
+
+  .fixed-header-container .signup-btn span {
     padding: 0px 12px;
+    max-width: 100%;
+    font-family: "TT Norms bold";
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060ff;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+  }
 
-}
-
-.dasher-main-container{
-    max-width: 768px;
-    margin: 0px auto;
-
-}
-.dasher-sub-container{
+  .fixed-header-container .sign-btn-container {
+    flex: 1 1 0%;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 40px 0px;
-    padding: 8px;
+    justify-content: flex-end;
+  }
+  .dasher-sub-container {
+    margin: 32px 0px;
+  }
 
+  .dasher-main-container .dasher-container .img-container {
+    margin-right: 64px;
+  }
+  .dasher-main-container .dasher-container .img-container img {
+    height: 124px;
+    width: 124px;
+  }
+
+  .main-middle-container .first-image-text-container-2 {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: -60px;
+  }
+  .main-middle-container .tablet-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    max-width: 1184px;
+  }
+  .main-middle-container .tablet-text-container {
+    max-width: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .main-middle-container .texts h2 {
+    max-width: 90%;
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+  }
+  .main-middle-container .texts .sub-head {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-middle-container .para-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+
+  .main-middle-container .btn-container {
+    margin-top: 30px;
+  }
+  .main-middle-container .btn-container a {
+    min-height: 40px;
+  }
+
+  .main-middle-container .btn-container a span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main-middle-container .image-container .mob-img {
+    display: none;
+  }
+
+  .main-middle-container .image-container .tablet-plus-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .main-middle-container .bg-pink-container-2 {
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+  }
+  .main-middle-container .tablet-container-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 1184px;
+  }
+  .main-middle-container .para-text-2 {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .main-middle-container .para-text-stores{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main-middle-container .image-container-three {
+    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png")
+      center center / cover;
+    /* position: absolute; */
+    height: 600px;
+    width: 100%;
+  }
+
+  .main-middle-container .image-container-three h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+
+  .main-middle-container .image-container-three .text-second-line {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .main-middle-container .image-container-three .last-small-text {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .main-middle-container .first-image-text-container-3 {
+    padding-top: 60px;
+    margin-bottom: -40px;
+  }
+
+  .helping-text-container{
+    padding: 60px 20px 40px;
+  }
+
+  .helping-text-container span{
+    text-align: center;
+    max-width: 500px;
+    font-size: 32px;
+    line-height: 40px;
+
+  }
+
+  .scrollable-img-container{
+    flex-flow: wrap;
+    max-width: 1184px;
+  }
+
+  .scrollable-img-container .scrollable-img-text{
+    max-width: 50%;
+    min-width: 50%;
+    padding: 20px;
+    margin: 0px;
+  }
+  .scrollable-img-container .scrollable-img-text .mob-img{
+    display: none;
+  }
+
+  .scrollable-img-container .scrollable-img-text .img-wrapper{
+    
+    width: 100%;
+  }
+
+  .scrollable-img-container .scrollable-img-text .tablet-wrapper{
+    width: 100%;
+    position: relative;
+  }
+
+  .scrollable-img-container .scrollable-img-text .tablet-plus-img{
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .scrollable-img-container .scrollable-img-text .tablet-wrapper::after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    
+  }
+
+  .scrollable-img-container .scrollable-img-text .para-text{
+    /* max-width: 90%; */
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+
+  }
+
+  .scrollable-tablet-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgb(254, 241, 238);
+  }
+
+  .age-text{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: 'TT Norms medium';
+  }
 
 }
 
-.dasher-sub-container-2{
+/* center text size increse */
+@media screen and (min-width: 769px) {
+  .discover-full-container .discover-text h1 {
+    max-width: 750px;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.01px;
+   
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .fixed-header-container .logo-svg .doordash-text {
+    display: none;
+  }
+}
+
+/* labtop (medium) screen */
+@media screen and (min-width: 960px) {
+  .svg-container .logo-svg {
+    width: 42px;
+    height: 24px;
+  }
+
+  /* .main-container .center-img-container{
+    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
+  } */
+
+  .title-svg-container .title-svg {
+    width: 155px;
+    height: 18px;
+    margin-left: 4px;
+  }
+
+  .login-btn-container .text-icon-container .text .signin {
+    display: none;
+  }
+
+  .login-btn-container .text-icon-container .text .signin-saved {
+    width: 100%;
+    font-family: "TT Norms bold";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    display: block;
+    text-decoration: none;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .fixed-header-container .logo-svg .icon {
+    margin-right: 8px;
+  }
+}
+
+/* arrow color and background change */
+@media screen and (min-width: 1184px) {
+  .input-btn-container .right-arrow button {
+    background-color: #eb1700ff;
+  }
+  /* .main-container .center-img-container{
+    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
+    background-position: center center;
+  } */
+
+  .input-btn-container .right-arrow button .black-arrow {
+    display: none;
+  }
+
+  .dasher-main-container {
+    max-width: 1184px;
+  }
+  .dasher-main-container .dasher-sub-container {
+    margin: 96px 0;
+    flex-direction: row;
+    display: flex;
+    padding: 12px;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .dasher-main-container .dasher-sub-container .dasher-sub-container-2 {
+    flex-direction: row;
     display: flex;
     justify-content: center;
     height: 100%;
-    flex-direction: column;
-}
-
-.dasher-main-container .dasher-container{
-   display: flex;
-   width: 100%;
-   min-width: 360px;
-   flex-flow: row;
-   max-width: 100%;
-   padding: 16px; 
-}
-
-.dasher-main-container .dasher-container .img-container{
-    margin-right:32px;
-}
-.dasher-main-container .dasher-container .img-container img{
-    height: 88px;
-    width: 88px;
-}
-
-.dasher-main-container .dasher-container .dasher-text{
+  }
+  .dasher-main-container .dasher-sub-container .dasher-container {
+    flex-flow: column;
+    /* margin: 0px 17px; */
+  }
+  .dasher-main-container .dasher-container .img-container {
+    display: flex;
+    justify-content: center;
+  }
+  .dasher-main-container .dasher-container .img-container img {
+    height: 154px;
+    width: 154px;
+  }
+  .dasher-main-container .dasher-container .dasher-text {
+    min-height: 160px;
     display: flex;
     flex-flow: column;
     width: 100%;
     max-width: 250px;
-}
-.dasher-main-container .dasher-container .dasher-text h2{
-    color: #191919ff;
-    font-family: 'TT Norms bold';
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: -0.01px;
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
-}
-.dasher-main-container .dasher-container .dasher-text-2{
+    /* align-items: center; */
+  }
+  .dasher-main-container .dasher-container .dasher-text-2 {
     max-width: 100%;
     display: block;
-}
+  }
 
-
-.dasher-main-container .dasher-container .dasher-text h3{
-    color: #191919ff;
-    font-family: 'TT Norms medium';
+  .dasher-main-container .dasher-container .dasher-text h3 {
+    margin-top: 8px;
+  }
+  .dasher-main-container .dasher-container .dasher-text h2 {
+    text-align: center;
+  }
+  .dasher-main-container .dasher-container .dasher-text h3 {
+    text-align: center;
+  }
+  .dasher-main-container .dasher-container .start-earning-btn {
+    justify-content: center;
+  }
+  .dasher-main-container .dasher-container .start-earning-btn span {
     font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.01px;
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
-}
-
-.dasher-main-container .dasher-container .start-earning-btn{
-    border: 0px;
-    padding: 0px;
-    margin: 12px 0px 0px 0px;
-    outline: 0;
-    background:transparent;
-    display: flex;
-    align-items: center;
-}
-
-.dasher-main-container .dasher-container .start-earning-btn span{
-    color: #eb1700ff;
-    font-family: 'TT Norms bold';
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.01px;
-}
-
-.dasher-main-container .dasher-container .start-earning-btn svg{
-    margin-left: 4px;
-}
-
-/* location-svg hiding */
-@media screen and (max-width:767px) {
-    .input-btn-container .input-container .search-container .location-svg {
-        display: none;
-    }
-
-    .fixed-header .sign-buttons {
-        display: none;
-    }
-}
-
-
-
-/* tablet screen */
-@media screen and (min-width:768px) {
-    header {
-        display: none;
-    }
-
-    .browse-bottom-full-container {
-        display: none;
-    }
-
-    .main-container .center-img-container {
-        background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
-        height: 650px;
-        padding: 0px 8px;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        width: 100%;
-        z-index: 1;
-        justify-content: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .main-container .center-heading {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    .discover-full-container {
-        flex-grow: 1;
-    }
-
-    .discover-full-container .buttons {
-        display: none;
-    }
-
-    .discover-full-container .sign-buttons {
-        padding-left: 16px;
-        padding-right: 24px;
-        display: flex;
-        justify-content: flex-end;
-        gap: 8px;
-    }
-
-    .discover-full-container .sign-buttons .signin-btn {
-        position: relative;
-        max-width: 100%;
-        display: inline-flex;
-        min-height: 40px;
-        width: auto;
-        align-items: center;
-        justify-content: flex-start;
-        border-radius: 20px;
-        border: none;
-        text-decoration: none;
-        text-align: center;
-        background-color: #eb1700ff;
-        color: #ffffff;
-        margin: 0px;
-        padding: 0px;
-
-    }
-
-    .discover-full-container .signin-btn span {
-        padding: 0px 12px;
-        max-width: 100%;
-        font-family: "TT Norms bold";
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 22px;
-        letter-spacing: -0.01px;
-
-    }
-
-    .discover-full-container .signup-btn {
-        position: relative;
-        max-width: 100%;
-        display: inline-flex;
-        min-height: 40px;
-        width: auto;
-        align-items: center;
-        justify-content: flex-start;
-        border-radius: 20px;
-        text-decoration: none;
-        background-color: #ffffff;
-        color: #191919ff;
-    }
-
-    .discover-full-container .signup-btn span {
-        padding: 0px 12px;
-        max-width: 100%;
-        font-family: "TT Norms bold";
-        font-size: 18px;
-        font-weight: 700;
-        color: #606060ff;
-        line-height: 22px;
-        letter-spacing: -0.01px;
-    }
-
-    .discover-full-container .open-login-btn {
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        top: 0px;
-        margin-top: 16px;
-        z-index: 1;
-    }
-
-    .input-btn-container .input-form input {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-right: 68px;
-    }
-
-    .input-btn-container .input-container .search-container .search-svg {
-        display: none;
-    }
-
-    .input-btn-container .input-container .search-container .location-svg {
-        margin-left: 4px;
-    }
-
-    .input-btn-container .right-arrow button {
-        right: -8px
-    }
-
-    .login-btn-container .text-icon-container .text .signin {
-        width: 100%;
-        font-family: 'TT Norms bold';
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: -0.01px;
-        display: block;
-        text-decoration: none;
-        max-width: 100%;
-        overflow: hidden;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .login-btn-container .text-icon-container .text .login {
-        display: none;
-    }
-
-    .login-btn-container .text-icon-container .text .signin-saved {
-        display: none;
-    }
-
-    .fixed-button-container {
-        display: none;
-    }
-
-    .fixed-header-container .sign-buttons {
-        padding-left: 16px;
-        /* padding-right: 24px; */
-        display: flex;
-        justify-content: flex-end;
-        gap: 8px;
-
-    }
-
-    .fixed-header-container .sign-buttons .signin-btn {
-        position: relative;
-        max-width: 100%;
-        display: inline-flex;
-        min-height: 40px;
-        width: auto;
-        align-items: center;
-        justify-content: flex-start;
-        border-radius: 20px;
-        border: none;
-        text-decoration: none;
-        text-align: center;
-        background-color: #eb1700ff;
-        color: #ffffff;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .fixed-header-container .sign-buttons .signin-btn span {
-        padding: 0px 12px;
-        max-width: 100%;
-        font-family: "TT Norms bold";
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 22px;
-        letter-spacing: -0.01px;
-    }
-
-    .fixed-header-container .signup-btn {
-        position: relative;
-        max-width: 100%;
-        display: inline-flex;
-        min-height: 40px;
-        width: auto;
-        align-items: center;
-        justify-content: flex-start;
-        border-radius: 20px;
-        text-decoration: none;
-        background-color: #ffffff;
-        color: #191919ff;
-    }
-
-    .fixed-header-container .signup-btn span {
-        padding: 0px 12px;
-        max-width: 100%;
-        font-family: "TT Norms bold";
-        font-size: 18px;
-        font-weight: 700;
-        color: #606060ff;
-        line-height: 22px;
-        letter-spacing: -0.01px;
-    }
-
-    .fixed-header-container .sign-btn-container {
-        flex: 1 1 0%;
-        display: flex;
-        justify-content: flex-end;
-    }
-    .dasher-sub-container{
-        margin: 32px 0px;
-    }
-
-    .dasher-main-container .dasher-container .img-container{
-        margin-right:64px;
-    }
-    .dasher-main-container .dasher-container .img-container img{
-        height: 124px;
-        width: 124px;
-    }
-
-}
-
-
-
-/* center text size increse */
-@media screen and (min-width:769px) {
-    .discover-full-container .discover-text h1 {
-        max-width: 750px;
-        font-size: 40px;
-        line-height: 40px;
-        letter-spacing: -0.01px;
-    }
-}
-
-
-@media screen and (max-width:959px) {
-    .fixed-header-container .logo-svg .doordash-text {
-        display: none;
-    }
-}
-
-/* labtop (medium) screen */
-@media screen and (min-width:960px) {
-    .svg-container .logo-svg {
-        width: 42px;
-        height: 24px;
-    }
-
-    .title-svg-container .title-svg {
-        width: 155px;
-        height: 18px;
-        margin-left: 4px;
-    }
-
-
-
-    .login-btn-container .text-icon-container .text .signin {
-        display: none;
-    }
-
-    .login-btn-container .text-icon-container .text .signin-saved {
-
-        width: 100%;
-        font-family: 'TT Norms bold';
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: -0.01px;
-        display: block;
-        text-decoration: none;
-        max-width: 100%;
-        overflow: hidden;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .fixed-header-container .logo-svg .icon {
-        margin-right: 8px;
-    }
-
-
-}
-
-/* arrow color and background change */
-@media screen and (min-width:1184px) {
-    .input-btn-container .right-arrow button {
-        background-color: #eb1700ff;
-    }
-
-    .input-btn-container .right-arrow button .black-arrow {
-        display: none;
-    }
-
-    .dasher-main-container{
-        max-width: 1184px;
-
-    }
-    .dasher-main-container .dasher-sub-container{
-        margin: 96px 0;
-        flex-direction: row;
-        display: flex;
-        padding: 12px;
-        max-width: 100%;
-        justify-content: center;
-    }
-    .dasher-main-container .dasher-sub-container .dasher-sub-container-2{
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
-    .dasher-main-container .dasher-sub-container .dasher-container{
-        flex-flow: column;
-        /* margin: 0px 17px; */
-    }
-    .dasher-main-container .dasher-container .img-container{
-       display: flex;
-       justify-content: center;
-
-    }
-    .dasher-main-container .dasher-container .img-container img{
-        height: 154px;
-        width: 154px;
-    }
-    .dasher-main-container .dasher-container .dasher-text{
-
-        min-height: 160px;
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-        max-width: 250px;
-        /* align-items: center; */
-    }
-    .dasher-main-container .dasher-container .dasher-text-2{
-        max-width: 100%;
-        display: block;
-    }
-
-    .dasher-main-container .dasher-container .dasher-text h3{
-        margin-top: 8px;
-
-    }
-    .dasher-main-container .dasher-container .dasher-text h2{
-        text-align: center;
-    }
-    .dasher-main-container .dasher-container .dasher-text h3{
-        text-align: center;
-    }
-    .dasher-main-container .dasher-container .start-earning-btn {
-        justify-content: center;
-    }
-    .dasher-main-container .dasher-container .start-earning-btn span{
-        font-size: 18px;
-        line-height: 22px;
-    }
+    line-height: 22px;
+  }
 }
 
 /* white arrow hiding */
-@media screen and (max-width:1183px) {
-    .input-btn-container .right-arrow button .white-arrow {
-        display: none;
-    }
+@media screen and (max-width: 1183px) {
+  .input-btn-container .right-arrow button .white-arrow {
+    display: none;
+  }
 }
-
 
 /* laptop (large) screen */
 
-@media screen and (min-width:1440px) {
-    .input-btn-container .right-arrow button .white-arrow {
-        background-color: #eb1700ff;
-    }
+@media screen and (min-width: 1440px) {
+  .input-btn-container .right-arrow button .white-arrow {
+    background-color: #eb1700ff;
+  }
 }
+
+
 
 
