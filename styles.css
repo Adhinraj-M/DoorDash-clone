@@ -791,6 +791,16 @@ div {
   letter-spacing: -0.01px;
 }
 
+.main-middle-container .para-text-3{
+  margin-top: 10px;
+  color: #191919ff;
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+}
+
 .main-middle-container .para-text-stores{
     margin-top: 10px;
     color: #191919ff;
@@ -897,7 +907,8 @@ div {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.01px;
-  margin: 0px;
+  /* margin: 0px; */
+  margin-bottom: 0px;
 }
 
 .main-middle-container .image-container-three .text-second-line {
@@ -1075,7 +1086,7 @@ div {
     color: #191919ff;
     font-family: "TT Norms bold";
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 22px;
     letter-spacing: -0.01px;
 
@@ -1092,11 +1103,11 @@ div {
     align-items: center;
     text-align: center;
     background-color: #ffffff;
-    transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out;
+    /* transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out; */
 }
 .cities-cate-container .cate-2 span{
     color: #606060ff;
-    font-family: "TT Norms bold";
+    font-family: "TT Norms medium";
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
@@ -1170,6 +1181,269 @@ div {
     align-items: center;
     justify-content: center;
 }
+
+.footer-main-container{
+  width: 100%;
+  background-color: #191919ff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-main-container footer{
+  max-width: 1160px;
+  padding: 0px 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-main-container .footer-container-2{
+  text-align: center;
+  padding:32px 0px;
+}
+
+.footer-main-container .footer-container-2 h2 
+, footer .get-to-know-container h2{
+  margin-bottom: 8px;
+  color: rgb(255, 255, 255);
+  font-family: "TT Norms medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  margin-top: 0px;
+
+}
+
+.footer-main-container .footer-section-container{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer-main-container .footer-sections{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+
+.footer-main-container .footer-section-container a,
+footer .get-to-know-container a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: filter 0.2s;
+  margin-top: 8px;
+}
+.footer-main-container .footer-section-container a span, 
+footer .get-to-know-container a span {
+ color: rgb(196, 196, 196);
+ font-family: "TT Norms medium";
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 20px;
+ letter-spacing: -0.01px;
+
+}
+
+
+footer .more-details-container{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+footer .more-details{
+  flex-direction: column;
+  text-align: center;
+  flex:1 1 0%;
+  display: flex;
+  justify-content: space-between;
+  gap:12px;
+}
+
+footer .get-to-know-container{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .stores-container{
+  flex-direction: column;
+  flex:1 1 0%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+footer .stores-container .stores-container-2{
+  flex: 1 1 0%;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .stores-container-2 a{
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .stores-container-2 a:nth-child(2){
+  margin-top: 12px;
+}
+
+footer .app-store-icon{
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: rgb(73, 73, 73);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-end-container{
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0px;
+}
+
+footer .footer-end-container .terms-con-container{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+footer .doordash-logo-footer{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+footer .footer-end-container .footer-texts{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: filter 0.2s;
+  margin-left: 16px;
+}
+
+footer .footer-end-container .footer-texts span{
+  color: rgb(196, 196, 196);
+  font-family: "TT Norms medium";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.01px;
+
+}
+
+footer .lang-select-container{
+  padding: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .lang-select-container-2{
+  width: 150px;
+}
+
+footer .svg-select-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  border-radius: 16px;
+  padding: 4px 12px;
+  border: none;
+  background-color: #f1f1f1ff;
+}
+
+footer .lang-select-container-2 .lang-icon{
+  max-width: 100%;
+  margin-right: 8px;
+  display: flex;
+}
+
+footer .lang-select-container .select-box-container{
+  flex-grow: 1;
+  background: inherit;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+footer .lang-select-container .select-box-container-2{
+  position:relative;
+  background: inherit;
+}
+
+footer .lang-select-container .select-box-container-2 select{
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+  font-weight: 500;
+  width: 100%;
+  border: none;
+  color: currentColor;
+  appearance: none;
+}
+
+.lang-select-container .down-arrow{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  right: 0px;
+  height: 24px;
+  min-height: 8px;
+  max-width: 100%;
+  pointer-events: none;
+  background:transparent;
+  bottom: 0px;
+  margin: auto 0px;
+} 
+
+.footer-end-container .social-media-container{
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-end-container .social-media-container a{
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-end-container .social-media-container a:nth-child(2){
+  margin-left: 12px;
+}
+
+.footer-end-container .social-media-container a:nth-child(3){
+  margin-left: 12px;
+}
+
 
 /*  hiding in mobile*/
 @media screen and (max-width: 767px) {
@@ -1467,6 +1741,12 @@ div {
     line-height: 22px;
     margin-top: 10px;
   }
+  
+  .main-middle-container .para-text-3{
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
 
   .main-middle-container .btn-container {
     margin-top: 30px;
@@ -1619,6 +1899,21 @@ div {
     font-weight: 500;
     margin-top: 20px;
     font-family: 'TT Norms medium';
+  }
+
+  .unlock-text-container{
+    padding: 60px 20px 40px;
+  }
+  .unlock-text-container .unlock-text{
+    max-width: 500px;
+    font-size: 32px;
+    line-height: 40px;
+
+  }
+
+  .available-cities-container .heading-container h2 {
+    font-size: 32px;
+    line-height: 40px;
   }
 
 }
