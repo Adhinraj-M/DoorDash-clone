@@ -1200,7 +1200,6 @@ div {
 }
 
 .footer-main-container .footer-container-2{
-  text-align: center;
   padding:32px 0px;
 }
 
@@ -1218,7 +1217,6 @@ div {
 }
 
 .footer-main-container .footer-section-container{
-  flex-direction: column;
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -1257,8 +1255,7 @@ footer .more-details-container{
 
 
 footer .more-details{
-  flex-direction: column;
-  text-align: center;
+ 
   flex:1 1 0%;
   display: flex;
   justify-content: space-between;
@@ -1309,7 +1306,7 @@ footer .app-store-icon{
 }
 
 footer .footer-end-container{
-  flex-direction: column-reverse;
+
   align-items: center;
   text-align: center;
   display: flex;
@@ -1461,7 +1458,19 @@ footer .lang-select-container .select-box-container-2 select{
   .scrollable-img-container .img-wrapper .tablet-plus-img{
     display: none;
   }
-
+  .footer-main-container .footer-container-2{
+  text-align: center;
+  }
+  .footer-main-container .footer-section-container{
+    flex-direction: column;
+  }
+  footer .more-details{
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .footer-end-container{
+    flex-direction: column-reverse;
+  }
 
 }
 
