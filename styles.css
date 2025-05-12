@@ -1944,6 +1944,14 @@ footer .lang-select-container .select-box-container-2 select{
     flex: 1 1 0%;
   }
 
+  footer .lang-select-container {
+    padding: 0px 12px;
+  }
+
+  footer .footer-end-container .terms-con-container{
+    margin-top: 0px;
+  }   
+
 }
 
 /* center text size increse */
@@ -1961,6 +1969,8 @@ footer .lang-select-container .select-box-container-2 select{
   .fixed-header-container .logo-svg .doordash-text {
     display: none;
   }
+
+  
 }
 
 /* labtop (medium) screen */
@@ -2002,6 +2012,15 @@ footer .lang-select-container .select-box-container-2 select{
   .fixed-header-container .logo-svg .icon {
     margin-right: 8px;
   }
+  footer .more-details-container{
+    flex-direction: row;
+  }
+  footer .stores-container{
+    flex-direction: row;
+  }
+footer .stores-container .stores-container-2 {
+  flex:none;
+}
 }
 
 /* arrow color and background change */
@@ -2083,6 +2102,8 @@ footer .lang-select-container .select-box-container-2 select{
   .input-btn-container .right-arrow button .white-arrow {
     display: none;
   }
+ 
+
 }
 
 /* laptop (large) screen */
@@ -2091,6 +2112,13 @@ footer .lang-select-container .select-box-container-2 select{
   .input-btn-container .right-arrow button .white-arrow {
     background-color: #eb1700ff;
   }
+
+   .main-container .center-img-container{
+    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
+    background-size: cover;
+    background-position: center center;
+    height: 650px;
+  } 
 }
 
 
