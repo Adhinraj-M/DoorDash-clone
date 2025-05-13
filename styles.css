@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  
 }
 
 @font-face {
@@ -167,7 +168,7 @@ div {
 }
 
 .main-container .center-img-container {
-  background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
+  background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png");
   height: 550px;
   padding: 0px 8px;
   display: flex;
@@ -330,7 +331,8 @@ div {
 .input-btn-container .input-container .input-form {
   margin: 12px;
   flex-grow: 1;
-  background: inherit;
+  color: rgb(25, 25, 25);
+  background: rgb(255, 255, 255);
   max-width: 100%;
 }
 
@@ -347,8 +349,12 @@ div {
   border: none;
   padding: 0px;
   margin: 0px;
-  color: rgb(25, 25, 25);
+  color: rgba(25, 25, 25,1);
   background: #ffffff;
+}
+
+.input-btn-container .input-form input::placeholder{
+  color: rgba(96, 96, 96,1);
 }
 
 .input-btn-container .right-arrow {
@@ -634,6 +640,7 @@ div {
   max-width: 768px;
   margin: 0px auto;
 }
+
 .dasher-sub-container {
   display: flex;
   justify-content: center;
@@ -661,6 +668,7 @@ div {
 .dasher-main-container .dasher-container .img-container {
   margin-right: 32px;
 }
+
 .dasher-main-container .dasher-container .img-container img {
   height: 88px;
   width: 88px;
@@ -672,6 +680,7 @@ div {
   width: 100%;
   max-width: 250px;
 }
+
 .dasher-main-container .dasher-container .dasher-text h2 {
   color: #191919ff;
   font-family: "TT Norms bold";
@@ -683,6 +692,7 @@ div {
   margin: 0px;
   padding: 0px;
 }
+
 .dasher-main-container .dasher-container .dasher-text-2 {
   max-width: 100%;
   display: block;
@@ -781,6 +791,7 @@ div {
   letter-spacing: -0.01px;
   padding: 0px;
 }
+
 .main-middle-container .para-text {
   margin-top: 10px;
   color: #191919ff;
@@ -791,7 +802,7 @@ div {
   letter-spacing: -0.01px;
 }
 
-.main-middle-container .para-text-3{
+.main-middle-container .para-text-3 {
   margin-top: 10px;
   color: #191919ff;
   font-family: "TT Norms medium";
@@ -801,14 +812,14 @@ div {
   letter-spacing: -0.01px;
 }
 
-.main-middle-container .para-text-stores{
-    margin-top: 10px;
-    color: #191919ff;
-    font-family: "TT Norms medium";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: -0.01px;
+.main-middle-container .para-text-stores {
+  margin-top: 10px;
+  color: #191919ff;
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
 }
 
 .main-middle-container .btn-container {
@@ -845,6 +856,7 @@ div {
 .main-middle-container .bg-pink-container {
   width: 100%;
 }
+
 .main-middle-container .para-text-2 {
   margin-top: 10px;
   color: #191919ff;
@@ -868,8 +880,7 @@ div {
 }
 
 .main-middle-container .image-container-three {
-  background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png")
-    center center / cover;
+  background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png") center center / cover;
   position: relative;
   height: 350px;
 }
@@ -907,7 +918,6 @@ div {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -0.01px;
-  /* margin: 0px; */
   margin-bottom: 0px;
 }
 
@@ -934,13 +944,12 @@ div {
 }
 
 .main-middle-container .first-image-text-container-3 {
-   
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    min-width: 90%;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  min-width: 90%;
+  align-items: center;
+}
 
 .helping-text-container {
   display: flex;
@@ -996,202 +1005,196 @@ div {
   flex-direction: column;
 }
 
-.age-text{
-    margin-top: 10px;
-    color: #191919ff;
-    font-family: "TT Norms bold";
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: -0.01px;
-
+.age-text {
+  margin-top: 10px;
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.01px;
 }
 
-.unlock-text-container{
-    display: flex;
-    justify-content: center;
-    background-color: #ffffff;
-    padding: 40px 20px 20px;
-    width: 100%;
+.unlock-text-container {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 40px 20px 20px;
+  width: 100%;
 }
 
-.unlock-text-container .unlock-text{
-    text-align: center;
-    max-width: 300px;
-    color: #191919ff;
-    font-size: 24px;
-    font-family: "TT Norms bold";
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: -0.01px;
-
+.unlock-text-container .unlock-text {
+  text-align: center;
+  max-width: 300px;
+  color: #191919ff;
+  font-size: 24px;
+  font-family: "TT Norms bold";
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01px;
 }
 
-.available-cities-container{
-    display: contents;
+.available-cities-container {
+  display: contents;
 }
 
-.available-cities-container .heading-container{
-    max-width: 100%;
-    padding: 24px 16px;
-    width: 100%;
-
+.available-cities-container .heading-container {
+  max-width: 100%;
+  padding: 24px 16px;
+  width: 100%;
 }
 
-.available-cities-container .heading-container h2{
-    text-align: center;
-    font-family: "TT Norms bold";
-    margin-bottom: 20px;
-    color:#191919ff ;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-
+.available-cities-container .heading-container h2 {
+  text-align: center;
+  font-family: "TT Norms bold";
+  margin-bottom: 20px;
+  color: #191919ff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.01px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.available-cities-container  .cities-cate-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: column;
-    gap: 24px;
+.available-cities-container .cities-cate-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.available-cities-container  .cities-cate-container .cate-container{ 
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    flex-direction: row;
+.available-cities-container .cities-cate-container .cate-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
 }
 
-.cities-cate-container .cate-1{
-    border-bottom: 3px solid transparent;
-    box-shadow: 0 3px 0 #191919ff;
-    padding-bottom: 12px;
-    width: 33.33%;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out;
+.cities-cate-container .cate-1 {
+  border-bottom: 3px solid transparent;
+  box-shadow: 0 3px 0 #191919ff;
+  padding-bottom: 12px;
+  width: 33.33%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out;
 }
 
-.cities-cate-container .cate-container .cate-1 span{
-    color: #191919ff;
-    font-family: "TT Norms bold";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-
+.cities-cate-container .cate-container .cate-1 span {
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01px;
 }
 
-.cities-cate-container .cate-2{
-    border-bottom: 2px solid transparent;
-    box-shadow: 0 2px 0  #f1f1f1ff;
-    padding-bottom: 12px;
-    width: 33.33%;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    /* transition: background-color 0.15s ease-in-out, box-shadow o.15s ease-in-out; */
-}
-.cities-cate-container .cate-2 span{
-    color: #606060ff;
-    font-family: "TT Norms medium";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-
+.cities-cate-container .cate-2 {
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 2px 0 #f1f1f1ff;
+  padding-bottom: 12px;
+  width: 33.33%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
 }
 
-.available-cities-container .cities-name-container{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
+.cities-cate-container .cate-2 span {
+  color: #606060ff;
+  font-family: "TT Norms medium";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01px;
 }
 
-.cities-name-container .cities-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
-    width: 100%;
+.available-cities-container .cities-name-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
 }
 
-.cities-name-container .cities-container .city-name{
-    text-decoration: none;
-    width: 100%;
-    white-space: nowrap;
-    display: block;
+.cities-name-container .cities-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  width: 100%;
 }
 
-.cities-name-container .cities-container .city-name span{
-    color: #191919ff;
-    font-family: "TT Norms medium";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.01px;
-
+.cities-name-container .cities-container .city-name {
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+  display: block;
 }
 
-.cities-name-container .see-more-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0px;
-    cursor: pointer;
+.cities-name-container .cities-container .city-name span {
+  color: #191919ff;
+  font-family: "TT Norms medium";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01px;
 }
 
-.cities-name-container .see-more-container span{
-    margin-right: 8px;
-    color:#191919ff ;
-    font-family: "TT Norms bold";
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.01px;
+.cities-name-container .see-more-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  cursor: pointer;
 }
 
-.cities-name-container .see-more-container  button{
-    position: relative;
-    max-width: 100%;
-    display: inline-flex;
-    min-height: 40px;
-    border-radius: 999px;
-    border: none;
-    cursor: pointer;
-    background-color: #f1f1f1ff;
-    color: #191919ff;
-    height: 40px;
-    width: 40px;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
+.cities-name-container .see-more-container span {
+  margin-right: 8px;
+  color: #191919ff;
+  font-family: "TT Norms bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.01px;
 }
 
-.footer-main-container{
+.cities-name-container .see-more-container button {
+  position: relative;
+  max-width: 100%;
+  display: inline-flex;
+  min-height: 40px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background-color: #f1f1f1ff;
+  color: #191919ff;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-main-container {
   width: 100vw;
   background-color: #191919ff;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
+  
 }
 
-.footer-main-container footer{
+.footer-main-container footer {
   max-width: 1160px;
   padding: 0px 20px;
   margin: auto;
@@ -1199,12 +1202,12 @@ div {
   flex-direction: column;
 }
 
-.footer-main-container .footer-container-2{
-  padding:32px 0px;
+.footer-main-container .footer-container-2 {
+  padding: 32px 0px;
 }
 
-.footer-main-container .footer-container-2 h2 
-, footer .get-to-know-container h2{
+.footer-main-container .footer-container-2 h2,
+footer .get-to-know-container h2 {
   margin-bottom: 8px;
   color: rgb(255, 255, 255);
   font-family: "TT Norms medium";
@@ -1213,16 +1216,15 @@ div {
   line-height: 22px;
   letter-spacing: -0.01px;
   margin-top: 0px;
-
 }
 
-.footer-main-container .footer-section-container{
+.footer-main-container .footer-section-container {
   display: flex;
   justify-content: space-between;
   gap: 12px;
 }
 
-.footer-main-container .footer-sections{
+.footer-main-container .footer-sections {
   display: flex;
   flex-direction: column;
   flex: 1 1 0%;
@@ -1236,47 +1238,44 @@ footer .get-to-know-container a {
   transition: filter 0.2s;
   margin-top: 8px;
 }
-.footer-main-container .footer-section-container a span, 
-footer .get-to-know-container a span {
- color: rgb(196, 196, 196);
- font-family: "TT Norms medium";
- font-size: 14px;
- font-weight: 500;
- line-height: 20px;
- letter-spacing: -0.01px;
 
+.footer-main-container .footer-section-container a span,
+footer .get-to-know-container a span {
+  color: rgb(196, 196, 196);
+  font-family: "TT Norms medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01px;
 }
 
-
-footer .more-details-container{
+footer .more-details-container {
   display: flex;
   flex-direction: column-reverse;
 }
 
-
-footer .more-details{
- 
-  flex:1 1 0%;
+footer .more-details {
+  flex: 1 1 0%;
   display: flex;
   justify-content: space-between;
-  gap:12px;
+  gap: 12px;
 }
 
-footer .get-to-know-container{
+footer .get-to-know-container {
   padding-top: 32px;
   display: flex;
   flex-direction: column;
 }
 
-footer .stores-container{
+footer .stores-container {
   flex-direction: column;
-  flex:1 1 0%;
+  flex: 1 1 0%;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
 }
 
-footer .stores-container .stores-container-2{
+footer .stores-container .stores-container-2 {
   flex: 1 1 0%;
   padding-top: 32px;
   display: flex;
@@ -1284,7 +1283,7 @@ footer .stores-container .stores-container-2{
   align-items: center;
 }
 
-footer .stores-container-2 a{
+footer .stores-container-2 a {
   opacity: 0.7;
   cursor: pointer;
   transition: opacity 0.2s;
@@ -1292,11 +1291,11 @@ footer .stores-container-2 a{
   color: inherit;
 }
 
-footer .stores-container-2 a:nth-child(2){
+footer .stores-container-2 a:nth-child(2) {
   margin-top: 12px;
 }
 
-footer .app-store-icon{
+footer .app-store-icon {
   padding: 2px 8px;
   border-radius: 8px;
   background-color: rgb(73, 73, 73);
@@ -1305,8 +1304,7 @@ footer .app-store-icon{
   justify-content: center;
 }
 
-footer .footer-end-container{
-
+footer .footer-end-container {
   align-items: center;
   text-align: center;
   display: flex;
@@ -1314,7 +1312,7 @@ footer .footer-end-container{
   padding: 32px 0px;
 }
 
-footer .footer-end-container .terms-con-container{
+footer .footer-end-container .terms-con-container {
   margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
@@ -1324,8 +1322,7 @@ footer .footer-end-container .terms-con-container{
   flex-direction: row;
 }
 
-
-footer .doordash-logo-footer{
+footer .doordash-logo-footer {
   max-width: 100%;
   display: flex;
   align-items: center;
@@ -1333,36 +1330,36 @@ footer .doordash-logo-footer{
   flex-direction: row;
 }
 
-footer .footer-end-container .footer-texts{
+footer .footer-end-container .footer-texts {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   transition: filter 0.2s;
   margin-left: 16px;
+  height: 18px;
 }
 
-footer .footer-end-container .footer-texts span{
+footer .footer-end-container .footer-texts span {
   color: rgb(196, 196, 196);
   font-family: "TT Norms medium";
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
   letter-spacing: -0.01px;
-
 }
 
-footer .lang-select-container{
+footer .lang-select-container {
   padding: 12px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-footer .lang-select-container-2{
+footer .lang-select-container-2 {
   width: 150px;
 }
 
-footer .svg-select-container{
+footer .svg-select-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -1373,25 +1370,25 @@ footer .svg-select-container{
   background-color: #f1f1f1ff;
 }
 
-footer .lang-select-container-2 .lang-icon{
+footer .lang-select-container-2 .lang-icon {
   max-width: 100%;
   margin-right: 8px;
   display: flex;
 }
 
-footer .lang-select-container .select-box-container{
+footer .lang-select-container .select-box-container {
   flex-grow: 1;
   background: inherit;
   max-width: 100%;
   margin: 0px auto;
 }
 
-footer .lang-select-container .select-box-container-2{
-  position:relative;
+footer .lang-select-container .select-box-container-2 {
+  position: relative;
   background: inherit;
 }
 
-footer .lang-select-container .select-box-container-2 select{
+footer .lang-select-container .select-box-container-2 select {
   font-family: "TT Norms medium";
   font-size: 14px;
   line-height: 20px;
@@ -1400,10 +1397,12 @@ footer .lang-select-container .select-box-container-2 select{
   width: 100%;
   border: none;
   color: currentColor;
+  margin: 0px;
+  padding: 0px;
   appearance: none;
 }
 
-.lang-select-container .down-arrow{
+.lang-select-container .down-arrow {
   position: absolute;
   display: flex;
   align-items: center;
@@ -1414,18 +1413,18 @@ footer .lang-select-container .select-box-container-2 select{
   min-height: 8px;
   max-width: 100%;
   pointer-events: none;
-  background:transparent;
+  background: transparent;
   bottom: 0px;
   margin: auto 0px;
-} 
+}
 
-.footer-end-container .social-media-container{
+.footer-end-container .social-media-container {
   flex-wrap: nowrap;
   display: flex;
   justify-content: center;
 }
 
-.footer-end-container .social-media-container a{
+.footer-end-container .social-media-container a {
   opacity: 0.7;
   cursor: pointer;
   transition: opacity 0.2s;
@@ -1433,14 +1432,13 @@ footer .lang-select-container .select-box-container-2 select{
   color: inherit;
 }
 
-.footer-end-container .social-media-container a:nth-child(2){
+.footer-end-container .social-media-container a:nth-child(2) {
   margin-left: 12px;
 }
 
-.footer-end-container .social-media-container a:nth-child(3){
+.footer-end-container .social-media-container a:nth-child(3) {
   margin-left: 12px;
 }
-
 
 /*  hiding in mobile*/
 @media screen and (max-width: 767px) {
@@ -1451,49 +1449,56 @@ footer .lang-select-container .select-box-container-2 select{
   .fixed-header .sign-buttons {
     display: none;
   }
-  
+
   .main-middle-container .image-container .tablet-plus-img {
     display: none;
   }
-  .scrollable-img-container .img-wrapper .tablet-plus-img{
+
+  .scrollable-img-container .img-wrapper .tablet-plus-img {
     display: none;
   }
-  .footer-main-container .footer-container-2{
-  text-align: center;
+
+  .footer-main-container .footer-container-2 {
+    text-align: center;
   }
-  .footer-main-container .footer-section-container{
+
+  .footer-main-container .footer-section-container {
     flex-direction: column;
   }
-  footer .more-details{
+
+  footer .more-details {
     flex-direction: column;
     text-align: center;
   }
-  footer .footer-end-container{
+
+  footer .footer-end-container {
     flex-direction: column-reverse;
   }
-
 }
 
-@media screen and (min-width:481px) {
-    .available-cities-container .heading-container {
-        width: 100%;
-        max-width: 1130px;
-        padding: 48px 0px;
-        margin: 0px auto;
-    }
-    footer .lang-select-container {
-      padding: 0px;
-    }
+@media screen and (min-width: 481px) {
+  .available-cities-container .heading-container {
+    width: 100%;
+    max-width: 1130px;
+    padding: 48px 0px;
+    margin: 0px auto;
+  }
 
-    .cities-cate-container .cate-1{
-      padding: 0px;
-    }
-    .cities-cate-container .cate-2{
-      padding: 0px;
-    }
-    .cities-name-container .cities-container .city-name {
-      width: 50%;
-    }
+  footer .lang-select-container {
+    padding: 0px;
+  }
+
+  .cities-cate-container .cate-1 {
+    padding: 0px;
+  }
+
+  .cities-cate-container .cate-2 {
+    padding: 0px;
+  }
+
+  .cities-name-container .cities-container .city-name {
+    width: 50%;
+  }
 }
 
 /* tablet screen */
@@ -1507,7 +1512,7 @@ footer .lang-select-container .select-box-container-2 select{
   }
 
   .main-container .center-img-container {
-    background: url(https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png);
+    background: url('https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_mobile.png');
     height: 650px;
     padding: 0px 8px;
     display: flex;
@@ -1715,6 +1720,7 @@ footer .lang-select-container .select-box-container-2 select{
     display: flex;
     justify-content: flex-end;
   }
+
   .dasher-sub-container {
     margin: 32px 0px;
   }
@@ -1722,6 +1728,7 @@ footer .lang-select-container .select-box-container-2 select{
   .dasher-main-container .dasher-container .img-container {
     margin-right: 64px;
   }
+
   .dasher-main-container .dasher-container .img-container img {
     height: 124px;
     width: 124px;
@@ -1732,17 +1739,20 @@ footer .lang-select-container .select-box-container-2 select{
     justify-content: center;
     margin-bottom: -60px;
   }
+
   .main-middle-container .tablet-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 60px;
     max-width: 1184px;
   }
+
   .main-middle-container .tablet-text-container {
     max-width: 400px;
     margin-top: auto;
     margin-bottom: auto;
   }
+
   .main-middle-container .texts h2 {
     max-width: 90%;
     margin-top: 20px;
@@ -1750,6 +1760,7 @@ footer .lang-select-container .select-box-container-2 select{
     line-height: 40px;
     letter-spacing: -0.01px;
   }
+
   .main-middle-container .texts .sub-head {
     margin-top: 20px;
     font-size: 20px;
@@ -1761,8 +1772,8 @@ footer .lang-select-container .select-box-container-2 select{
     line-height: 22px;
     margin-top: 10px;
   }
-  
-  .main-middle-container .para-text-3{
+
+  .main-middle-container .para-text-3 {
     font-size: 16px;
     line-height: 22px;
     margin-top: 20px;
@@ -1771,6 +1782,7 @@ footer .lang-select-container .select-box-container-2 select{
   .main-middle-container .btn-container {
     margin-top: 30px;
   }
+
   .main-middle-container .btn-container a {
     min-height: 40px;
   }
@@ -1779,6 +1791,7 @@ footer .lang-select-container .select-box-container-2 select{
     font-size: 16px;
     line-height: 22px;
   }
+
   .main-middle-container .image-container .mob-img {
     display: none;
   }
@@ -1794,27 +1807,28 @@ footer .lang-select-container .select-box-container-2 select{
     justify-content: center;
     padding-top: 80px;
   }
+
   .main-middle-container .tablet-container-2 {
     display: flex;
     flex-direction: row;
     gap: 60px;
     max-width: 1184px;
   }
+
   .main-middle-container .para-text-2 {
     margin-top: 20px;
     font-size: 16px;
     line-height: 22px;
   }
 
-  .main-middle-container .para-text-stores{
+  .main-middle-container .para-text-stores {
     margin-top: 20px;
     font-size: 16px;
     line-height: 22px;
   }
+
   .main-middle-container .image-container-three {
-    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png")
-      center center / cover;
-    /* position: absolute; */
+    background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png") center center / cover;
     height: 600px;
     width: 100%;
   }
@@ -1843,44 +1857,43 @@ footer .lang-select-container .select-box-container-2 select{
     margin-bottom: -40px;
   }
 
-  .helping-text-container{
+  .helping-text-container {
     padding: 60px 20px 40px;
   }
 
-  .helping-text-container span{
+  .helping-text-container span {
     text-align: center;
     max-width: 500px;
     font-size: 32px;
     line-height: 40px;
-
   }
 
-  .scrollable-img-container{
+  .scrollable-img-container {
     flex-flow: wrap;
     max-width: 1184px;
   }
 
-  .scrollable-img-container .scrollable-img-text{
+  .scrollable-img-container .scrollable-img-text {
     max-width: 50%;
     min-width: 50%;
     padding: 20px;
     margin: 0px;
   }
-  .scrollable-img-container .scrollable-img-text .mob-img{
+
+  .scrollable-img-container .scrollable-img-text .mob-img {
     display: none;
   }
 
-  .scrollable-img-container .scrollable-img-text .img-wrapper{
-    
+  .scrollable-img-container .scrollable-img-text .img-wrapper {
     width: 100%;
   }
 
-  .scrollable-img-container .scrollable-img-text .tablet-wrapper{
+  .scrollable-img-container .scrollable-img-text .tablet-wrapper {
     width: 100%;
     position: relative;
   }
 
-  .scrollable-img-container .scrollable-img-text .tablet-plus-img{
+  .scrollable-img-container .scrollable-img-text .tablet-plus-img {
     position: absolute;
     inset: 0px;
     width: 100%;
@@ -1888,24 +1901,23 @@ footer .lang-select-container .select-box-container-2 select{
     object-fit: cover;
     object-position: center center;
   }
-  .scrollable-img-container .scrollable-img-text .tablet-wrapper::after{
+
+  .scrollable-img-container .scrollable-img-text .tablet-wrapper::after {
     content: "";
     display: block;
     padding-bottom: 100%;
-    
   }
 
-  .scrollable-img-container .scrollable-img-text .para-text{
+  .scrollable-img-container .scrollable-img-text .para-text {
     /* max-width: 90%; */
     margin-top: 20px;
     text-align: center;
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.01px;
-
   }
 
-  .scrollable-tablet-container{
+  .scrollable-tablet-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1913,22 +1925,22 @@ footer .lang-select-container .select-box-container-2 select{
     background: rgb(254, 241, 238);
   }
 
-  .age-text{
+  .age-text {
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
     margin-top: 20px;
-    font-family: 'TT Norms medium';
+    font-family: "TT Norms medium";
   }
 
-  .unlock-text-container{
+  .unlock-text-container {
     padding: 60px 20px 40px;
   }
-  .unlock-text-container .unlock-text{
+
+  .unlock-text-container .unlock-text {
     max-width: 500px;
     font-size: 32px;
     line-height: 40px;
-
   }
 
   .available-cities-container .heading-container h2 {
@@ -1936,22 +1948,42 @@ footer .lang-select-container .select-box-container-2 select{
     line-height: 40px;
   }
 
-  .footer-container{
+  .footer-container {
     width: 1184px;
   }
 
-  .footer-main-container .footer-container-2{
+  .footer-main-container .footer-container-2 {
     flex: 1 1 0%;
   }
 
   footer .lang-select-container {
     padding: 0px 12px;
+    margin-bottom: 4px;
   }
 
-  footer .footer-end-container .terms-con-container{
-    margin-top: 0px;
-  }   
+  footer .social-media-container{
+    margin-bottom: 7px;
+  }
 
+  footer .footer-end-container .terms-con-container {
+    margin-top: 0px;
+  }
+
+  .scrollable-img-container {
+    overflow-x: hidden;
+  }
+
+  .cities-cate-container .cate-1 {
+    border-bottom: 3px solid #191919ff;
+    box-shadow: none;
+  }
+
+  .cities-cate-container .cate-2 {
+    border-bottom: 2px solid #f1f1f1ff;
+    box-shadow: none;
+  }
+
+  
 }
 
 /* center text size increse */
@@ -1961,7 +1993,6 @@ footer .lang-select-container .select-box-container-2 select{
     font-size: 40px;
     line-height: 40px;
     letter-spacing: -0.01px;
-   
   }
 }
 
@@ -1969,8 +2000,6 @@ footer .lang-select-container .select-box-container-2 select{
   .fixed-header-container .logo-svg .doordash-text {
     display: none;
   }
-
-  
 }
 
 /* labtop (medium) screen */
@@ -2012,15 +2041,25 @@ footer .lang-select-container .select-box-container-2 select{
   .fixed-header-container .logo-svg .icon {
     margin-right: 8px;
   }
-  footer .more-details-container{
+
+  footer .more-details-container {
     flex-direction: row;
   }
-  footer .stores-container{
+
+  footer .stores-container {
     flex-direction: row;
   }
-footer .stores-container .stores-container-2 {
-  flex:none;
-}
+
+  footer .stores-container .stores-container-2 {
+    flex: none;
+  }
+
+  .footer-end-container .social-media-container {
+    margin-bottom: 3px;
+  }
+  footer .lang-select-container{
+    margin-bottom: 0px;
+  }
 }
 
 /* arrow color and background change */
@@ -2028,6 +2067,7 @@ footer .stores-container .stores-container-2 {
   .input-btn-container .right-arrow button {
     background-color: #eb1700ff;
   }
+
   /* .main-container .center-img-container{
     background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
     background-position: center center;
@@ -2040,6 +2080,7 @@ footer .stores-container .stores-container-2 {
   .dasher-main-container {
     max-width: 1184px;
   }
+
   .dasher-main-container .dasher-sub-container {
     margin: 96px 0;
     flex-direction: row;
@@ -2048,24 +2089,29 @@ footer .stores-container .stores-container-2 {
     max-width: 100%;
     justify-content: center;
   }
+
   .dasher-main-container .dasher-sub-container .dasher-sub-container-2 {
     flex-direction: row;
     display: flex;
     justify-content: center;
     height: 100%;
   }
+
   .dasher-main-container .dasher-sub-container .dasher-container {
     flex-flow: column;
     /* margin: 0px 17px; */
   }
+
   .dasher-main-container .dasher-container .img-container {
     display: flex;
     justify-content: center;
   }
+
   .dasher-main-container .dasher-container .img-container img {
     height: 154px;
     width: 154px;
   }
+
   .dasher-main-container .dasher-container .dasher-text {
     min-height: 160px;
     display: flex;
@@ -2074,23 +2120,28 @@ footer .stores-container .stores-container-2 {
     max-width: 250px;
     /* align-items: center; */
   }
+
   .dasher-main-container .dasher-container .dasher-text-2 {
     max-width: 100%;
     display: block;
   }
-
+  
   .dasher-main-container .dasher-container .dasher-text h3 {
     margin-top: 8px;
   }
+
   .dasher-main-container .dasher-container .dasher-text h2 {
     text-align: center;
   }
+
   .dasher-main-container .dasher-container .dasher-text h3 {
     text-align: center;
   }
+
   .dasher-main-container .dasher-container .start-earning-btn {
     justify-content: center;
   }
+
   .dasher-main-container .dasher-container .start-earning-btn span {
     font-size: 18px;
     line-height: 22px;
@@ -2102,8 +2153,6 @@ footer .stores-container .stores-container-2 {
   .input-btn-container .right-arrow button .white-arrow {
     display: none;
   }
- 
-
 }
 
 /* laptop (large) screen */
@@ -2113,14 +2162,11 @@ footer .stores-container .stores-container-2 {
     background-color: #eb1700ff;
   }
 
-   .main-container .center-img-container{
+  .main-container .center-img-container {
     background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
     background-size: cover;
     background-position: center center;
     height: 650px;
-  } 
+  }
+
 }
-
-
-
-
