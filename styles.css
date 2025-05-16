@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
   
 }
 
@@ -1474,6 +1475,9 @@ footer .lang-select-container .select-box-container-2 select {
   footer .footer-end-container {
     flex-direction: column-reverse;
   }
+  .input-btn-container .right-arrow button .white-arrow {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -1982,7 +1986,13 @@ footer .lang-select-container .select-box-container-2 select {
     border-bottom: 2px solid #f1f1f1ff;
     box-shadow: none;
   }
+  .input-btn-container .right-arrow button {
+    background-color: #eb1700ff;
+  }
 
+    .input-btn-container .right-arrow button .black-arrow {
+    display: none;
+  }
   
 }
 
@@ -2064,18 +2074,13 @@ footer .lang-select-container .select-box-container-2 select {
 
 /* arrow color and background change */
 @media screen and (min-width: 1184px) {
-  .input-btn-container .right-arrow button {
-    background-color: #eb1700ff;
-  }
-
+  
   /* .main-container .center-img-container{
     background: url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/hero_v3/hero_desktop.png");
     background-position: center center;
   } */
 
-  .input-btn-container .right-arrow button .black-arrow {
-    display: none;
-  }
+  
 
   .dasher-main-container {
     max-width: 1184px;
@@ -2150,9 +2155,7 @@ footer .lang-select-container .select-box-container-2 select {
 
 /* white arrow hiding */
 @media screen and (max-width: 1183px) {
-  .input-btn-container .right-arrow button .white-arrow {
-    display: none;
-  }
+  
 }
 
 /* laptop (large) screen */
@@ -2170,3 +2173,5 @@ footer .lang-select-container .select-box-container-2 select {
   }
 
 }
+
+
